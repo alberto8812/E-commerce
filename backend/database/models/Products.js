@@ -9,7 +9,7 @@ sequelize.define('products',{
         primaryKey:true,
         allownull:false
     },
-    mame:{
+    name:{
         type:DataTypes.STRING,
         allownull:false,
     },
