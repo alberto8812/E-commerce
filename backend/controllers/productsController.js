@@ -1,11 +1,11 @@
-const {getApiProducsts}=require("../service/products/getAllProductService")
+const {getApiProducstsService,getAllProudctsService}=require("../service/products/getAllProductService")
 
 const getAllProductsControlers=async(req,res)=>{
-  const createBasicProducts=await getApiProducsts()
+  const createBasicProducts=await getApiProducstsService()
+  const getallproducts = await getAllProudctsService()
 
-  res.status(200).json(createBasicProducts)
+  res.status(200).json(getallproducts)
 }
-
 
 module.exports={
     getAllProductsControlers
