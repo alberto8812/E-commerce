@@ -2,7 +2,7 @@ const {DataTypes}=require ('sequelize')
 
 module.exports=(sequelize)=>{
 
-'products',{
+sequelize.define('products',{
     id:{
         type:DataTypes.UUID,
         defaultValue:DataTypes.UUIDV4,
@@ -38,5 +38,5 @@ module.exports=(sequelize)=>{
         default:false
     }
 
-}
+})
 }
