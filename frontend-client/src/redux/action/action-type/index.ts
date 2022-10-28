@@ -1,0 +1,4 @@
+export enum actionType{
+    GET_ALL_PRODUCTS='GET_ALL_PRODUCT',
+    GET_ID_PRODUCT='GET_ID_PRODUCT',
+}
