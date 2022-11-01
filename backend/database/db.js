@@ -60,7 +60,7 @@ process.env.NODE_ENV==="production"
 
     // Aca vendrian las relaciones
     // Product.hasMany(Reviews);
-const { User,  Product} = sequelize.models
+const { User,  Product,Category} = sequelize.models
 
 console.log(sequelize.models)
 
