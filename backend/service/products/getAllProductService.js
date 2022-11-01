@@ -1,7 +1,7 @@
 const axios = require('axios')
 const { db } = require('../../database/db')
 const { Products } = db.models
-
+const category=require("../../database/dbjson/category.json")
 
 const getApiProducstsService=async()=>{
     let dbCreateProducts = []
