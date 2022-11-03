@@ -17,7 +17,7 @@ const initialState:RepositoriesState = {
 }
 
 const reducer=(
-    state= initialState, 
+    state:RepositoriesState= initialState, 
     { type, payload }:Action
     ):RepositoriesState => {
   switch (type) {
