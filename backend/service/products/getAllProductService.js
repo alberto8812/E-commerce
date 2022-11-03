@@ -1,9 +1,31 @@
 const axios = require('axios')
 const { db } = require('../../database/db')
-const { Products } = db.models
+const { Products,Category } = db.models
 const category=require("../../database/dbjson/category.json")
 
+
+
+const getCategory=async()=>{
+    let dbfilltable=[]
+    const validation_1=await Category.findAll()
+    if(!validation_1.length){
+   
+      
+         for (const iterator of category) {
+            dbfilltable=await Category.create({
+                name:iterator.name,
+                image:iterator.image
+             })
+            }
+       
+        }
+   return  ;
+}
+
 const getApiProducstsService=async()=>{
+ const validation=await Products.findAll()
+
+ if(!validation.length){
     let dbCreateProducts = []
     const apiUrl = (await axios.get(`https://api.escuelajs.co/api/v1/products`)).data
 
@@ -26,6 +48,7 @@ const getApiProducstsService=async()=>{
         
     ).filter(e=>e!=="")
 
+  const category=await Category.findOne({where:{name:"Smarthwatch"}})
 
   for (const iterator of apiFilterInfo) {
      dbCreateProducts = await Products.create({
@@ -38,14 +61,18 @@ const getApiProducstsService=async()=>{
        
 
     })
+    await category.addProduct(dbCreateProducts)
   }
-
-    return apiFilterInfo
+}
+    return ;
 }
 
 
 const getAllProudctsService=async()=>{
-    const allProducts=await Products.findAll()
+    const allProducts=await Products.findAll({
+        include:[{model:Category, attributes: ['name','image'] }]
+    })
+   
 
     const orderProduct=allProducts.map(res=>{
      
@@ -58,6 +85,7 @@ const getAllProudctsService=async()=>{
                 image: res.image.split(","),
                 rating: res.rating,
                 deleted:res.deleted,
+                category:res.category
             }
 
     })
@@ -70,5 +98,6 @@ const getAllProudctsService=async()=>{
 
 module.exports={
     getApiProducstsService,
-    getAllProudctsService
+    getAllProudctsService,
+    getCategory
 }

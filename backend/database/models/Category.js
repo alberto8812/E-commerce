@@ -1,7 +1,7 @@
 const {DataTypes}=require("sequelize")
 
-module.exports=(Sequelize)=>{
-    Sequelize.define('category',{
+module.exports=(sequelize)=>{
+    sequelize.define('category',{
         id:{
             type:DataTypes.UUID,
             defaultValue:DataTypes.UUIDV4,
