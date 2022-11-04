@@ -4,7 +4,7 @@
  background: rgb(95, 219, 219);
  height: 100vh;
   display: grid;
-  grid-template-rows:  80px  1fr 1fr 1fr 1fr 80px;
+  grid-template-rows:  1fr  1fr 1fr 1fr 1fr 80px;
   grid-template-columns: repeat(3,1fr);
   
 
