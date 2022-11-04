@@ -1,0 +1,41 @@
+
+
+.app__navbar{
+ background: rgb(95, 219, 219);
+ height: 100vp;
+  display: grid;
+  grid-template-columns:80px 1fr 1fr;
+  grid-template-rows: 1fr 1fr 80px;
+  
+
+.app__navbar-header{
+    background: rgb(86, 192, 59);
+    grid-column: 1/span 3;
+    div{
+        width: 100%;
+        height: 500px;
+        background: rgb(192, 90, 59) ;
+    }
+  }
+
+.app__navbar-body{
+    grid-row: 2/span 6 ;
+    grid-column: 1/span 3;
+    background: rgb(61, 59, 192);
+    
+    div{
+        width: 100%;
+        height: 500px;
+        background: rgb(192, 90, 59) ;
+    }
+}
+
+.app__navbar-footer{
+    background: rgb(201, 51, 133);
+    grid-column: 1 /span 3;
+    grid-row: 6/7;
+}
+
+}
+
+
