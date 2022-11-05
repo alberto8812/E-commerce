@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.scss'
-import logo from "../../../images/logo.jpg";
+import logo from "../../../images/logo.png";
 import { BsSearch,BsCart } from 'react-icons/bs'
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
