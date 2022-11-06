@@ -24,8 +24,12 @@ const Navbar = () => {
           </ul>
         </label>
         <div className='search__input-search'>
+          <div>
           <input />
-          <div><BsSearch/></div>
+          <div>
+          <BsSearch className='search__input-search-icon'/>
+          </div>
+          </div>
         </div>
         <div className='search__input-link'>
           <div>
