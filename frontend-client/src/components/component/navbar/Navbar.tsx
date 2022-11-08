@@ -4,6 +4,9 @@ import logo from "../../../images/logo.png";
 import { BsSearch,BsCart } from 'react-icons/bs'
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
+import Selector from '../selector/Selector';
+
+
 
 const Navbar = () => {
   return (
@@ -45,16 +48,8 @@ const Navbar = () => {
       </div>
       <div className='container__Navbar-list'>
        <label className='Navbar__list-selector' >
-          <ul>
-            <li>Celulares |</li>
-            <li>Computadores e impresoras  |</li>
-            <li>TV  |</li>
-            <li>Audio  |</li>
-            <li>Electrodomesticos  |</li>
-            <li>Camaras  |</li>
-            <li>VideoJuegos  |</li>
-            <li>Accessorios  |</li>
-          </ul>
+        <Selector/>
+        
         </label>
       </div>
     </div>
