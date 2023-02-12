@@ -1,18 +1,23 @@
 
 import './App.css';
-import Home from './components/pages/Home';
-import { Routes,Route } from "react-router-dom";
-import Details from './components/pages/Details';
-import Navbar from './components/component/navbar/Navbar';
 
+import { Routes,Route, Navigate } from "react-router-dom";
+import Navbar from './components/component/navbar/Navbar';
+import { routes } from './components/routes/routes';
+
+
+routes
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
       <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/detail/:id' element={<Details/>}/>
+        {routes.map(({path,Component})=>(
+            <Route path={path} element={<Component/>} />
+        ))}
+        
+        <Route path='/*' element={ <Navigate to={routes[0].to} replace /> } />
       </Routes>
     
     </div>

@@ -5,6 +5,8 @@ import { BsSearch,BsCart } from 'react-icons/bs'
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import Selector from '../selector/Selector';
+import { NavLink } from 'react-router-dom';
+import { routes } from '../../routes/routes';
 
 
 
@@ -14,7 +16,10 @@ const Navbar = () => {
       <div className='container__Navbar-search'>
         <div  className='Navbar__search-imagen'>
 
-          <img  src={logo} alt='logo' />
+        <NavLink to={routes[0].to}>
+            <img  src={logo} alt='logo' />
+        </NavLink>
+
         </div>
         <div className='Navbar__search-input'>
         <label className='search__input-information' >

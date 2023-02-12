@@ -11,7 +11,7 @@ interface ROUTER{
     name:string
 }
 
-const detai=lazy(()=>import(/*webpackChunkName:"HOME" */ '../pages/Details'))
+const details=lazy(()=>import(/*webpackChunkName:"HOME" */ '../pages/Details'))
 
 
 export const routes:ROUTER[]=[
@@ -24,9 +24,10 @@ export const routes:ROUTER[]=[
     {
         to:'/detail/:id',
         path:'detail/:id',
-        Component:detai,
+        Component:details,
         name:'detail'
     }
     
 
 ]
+
