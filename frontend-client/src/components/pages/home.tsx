@@ -3,6 +3,7 @@ import { UseAction } from '../../hooks/useAction';
 import { useTypeSelector } from '../../hooks/useTypeSelector';
 import Chat from '../component/chatBot/Chat';
 import './styles/Home.scss'
+import { ProductCardHome, ProductCardImg } from '../component/ProductCardHome';
 
 
 
@@ -23,10 +24,11 @@ const Home = () => {
   
       </header>
       <body className='app__navbar-body'>
-        <div>body</div>
-        <div>body</div>
-        <div>body</div>
-        <div>body</div>
+        <ProductCardHome>
+
+            <ProductCardImg/>
+            
+        </ProductCardHome>
         <Chat/>
       </body>
       <footer className='app__navbar-footer'>footer</footer>
