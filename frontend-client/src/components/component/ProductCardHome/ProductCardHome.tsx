@@ -1,11 +1,13 @@
 import { createContext, ReactElement } from 'react';
 import { Product } from '../../../interfaces/interfaces';
 
+
 export const ProductContext=createContext({}  )
 const {Provider}=ProductContext;
 
 export interface Props{
  // productsHome:Product;
+ Product?:Product
  children?: React.ReactElement | React.ReactElement[];
 }
 

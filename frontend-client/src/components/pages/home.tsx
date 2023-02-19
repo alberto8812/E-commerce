@@ -4,7 +4,7 @@ import { useTypeSelector } from '../../hooks/useTypeSelector';
 import Chat from '../component/chatBot/Chat';
 import './styles/Home.scss'
 import { ProductCardHome, ProductCardImg } from '../component/ProductCardHome';
-
+import { productsHome } from "../data/Producto";
 
 
 const Home = () => {
@@ -24,11 +24,16 @@ const Home = () => {
   
       </header>
       <body className='app__navbar-body'>
-        <ProductCardHome>
+
+      {productsHome.map(praduct=>(
+        <ProductCardHome
+        Product={praduct}
+        >
 
             <ProductCardImg/>
-            
+
         </ProductCardHome>
+        ))}
         <Chat/>
       </body>
       <footer className='app__navbar-footer'>footer</footer>
