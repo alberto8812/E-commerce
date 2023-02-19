@@ -15,10 +15,13 @@ export  interface Product {
   
   }
 
+  export interface ProductContextProps{
+    Product:Product
+  }
 
 
   export interface ProductCardHOCProps{
-     ({children}:ProductCardProps):JSX.Element,
+     ({children,Product}:ProductCardProps):JSX.Element,
      Img:( Props: ProductImageProps ) => JSX.Element,
    
   }
