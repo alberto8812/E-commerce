@@ -16,12 +16,12 @@ export  interface Product {
   }
 
   export interface ProductContextProps{
-    Product:Product
+    product:Product
   }
 
 
   export interface ProductCardHOCProps{
-     ({children,Product}:ProductCardProps):JSX.Element,
+     ({children,product}:ProductCardProps):JSX.Element,
      Img:( Props: ProductImageProps ) => JSX.Element,
    
   }

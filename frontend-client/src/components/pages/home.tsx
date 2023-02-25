@@ -18,23 +18,25 @@ const Home = () => {
   return (
     <div className='app__navbar'>
       <header className='app__navbar-header'>
-      <div>
-        <h1>WORLD SHOP</h1>
+        <div>
+          <h1>WORLD SHOP</h1>
         </div>
-  
       </header>
+
       <body className='app__navbar-body'>
 
-      {productsHome.map(praduct=>(
-        <ProductCardHome
-        Product={praduct}
-        >
-
+       {productsHome.map(product=>(
+          <ProductCardHome
+            key={product.title}
+            product={product}
+             >
             <ProductCardImg/>
-
-        </ProductCardHome>
+            
+          </ProductCardHome>
         ))}
+
         <Chat/>
+
       </body>
       <footer className='app__navbar-footer'>footer</footer>
     </div>
