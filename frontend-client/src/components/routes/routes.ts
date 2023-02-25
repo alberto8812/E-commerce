@@ -1,5 +1,5 @@
 import { lazy, LazyExoticComponent } from "react"
-import Home from "../pages/Home"
+import Home from "../pages/home"
 
 
 type JSXComponent=()=>JSX.Element

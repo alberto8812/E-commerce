@@ -1,4 +1,4 @@
-import { createContext, ReactElement } from 'react';
+import { Children, createContext, ReactElement } from 'react';
 import { Product } from '../../../interfaces/interfaces';
 
 
@@ -15,6 +15,8 @@ export interface Props{
 
 export const ProductCardHome = ({}:Props) => {
   return (
-    <div>ProductCardHome</div>
+    <div>
+     
+    </div>
   )
 }
