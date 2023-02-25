@@ -1,4 +1,6 @@
+import { useContext } from 'react';
 import { imgHome } from '../../../interfaces/interfaces';
+import { ProductContext } from './ProductCardHome';
 
 
 export interface Props{
@@ -13,6 +15,11 @@ export interface Props{
 
 
 export const ProductCardImg = ({}:Props) => {
+   const {product} = useContext(ProductContext)
+
+    console.log(product,"aqui")
+
+
   return (
     <div>ProductCardImg</div>
   )

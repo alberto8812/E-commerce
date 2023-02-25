@@ -6,7 +6,7 @@ import Navbar from './components/component/navbar/Navbar';
 import { routes } from './components/routes/routes';
 
 
-routes
+
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <Navbar/>
       <Routes>
         {routes.map(({path,Component})=>(
-            <Route path={path} element={<Component/>} />
+            <Route path={path} element={<Component/>} key={path} />
         ))}
         
         <Route path='/*' element={ <Navigate to={routes[0].to} replace /> } />

@@ -1,22 +1,27 @@
-import { Children, createContext, ReactElement } from 'react';
-import { Product } from '../../../interfaces/interfaces';
+import { createContext, ReactElement, Children } from 'react';
+import { Product , ProductContextProps } from '../../../interfaces/interfaces';
 
 
-export const ProductContext=createContext({}  )
+export const ProductContext=createContext({} as ProductContextProps )
 const {Provider}=ProductContext;
 
 export interface Props{
  // productsHome:Product;
- Product?:Product
- children?: React.ReactElement | React.ReactElement[];
+ product:Product
+ children?: ReactElement | ReactElement[];
 }
 
 
 
-export const ProductCardHome = ({}:Props) => {
+export const ProductCardHome = ({children,product}:Props) => {
   return (
-    <div>
+    <Provider value={{
+      product,
+    }}>
+      <div>
+      {children}
+      </div>
      
-    </div>
+    </Provider>
   )
 }
