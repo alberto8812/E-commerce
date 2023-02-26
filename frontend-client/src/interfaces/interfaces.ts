@@ -3,14 +3,9 @@ import { Props as ProductImageProps } from "../components/component/ProductCardH
 
 
 
-export interface imgHome{
-    img1:string;
-    img2:string;
-    img3:string
-}
 
 export  interface Product {
-    img:imgHome;
+    img:string[];
     title:string;
   
   }
