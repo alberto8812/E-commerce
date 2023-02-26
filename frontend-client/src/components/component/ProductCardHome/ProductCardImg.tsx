@@ -1,10 +1,10 @@
 import { useContext } from 'react';
-import { imgHome } from '../../../interfaces/interfaces';
+
 import { ProductContext } from './ProductCardHome';
 
 
 export interface Props{
-  img?: imgHome;
+ 
   title?:string
   className?: string;
   style?: React.CSSProperties 
@@ -14,13 +14,18 @@ export interface Props{
 
 
 
-export const ProductCardImg = ({}:Props) => {
+export const ProductCardImg = () => {
    const {product} = useContext(ProductContext)
-
+   const {img,title}=product
     console.log(product,"aqui")
 
 
   return (
-    <div>ProductCardImg</div>
+    <div>
+      <h1>{title}</h1>
+      {img.map(img=>(
+       <img src={img} alt="Audio" key={img}/>
+      ))}
+    </div>
   )
 }
