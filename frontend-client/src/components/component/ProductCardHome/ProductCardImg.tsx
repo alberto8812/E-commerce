@@ -22,7 +22,7 @@ export const ProductCardImg = ({className}:Props) => {
   return (
     <div className={`${className}`}>
        {product.img.map(img=>(
-      <img src={img} alt="img" key={img}/>
+          <div key={img}><img src={img} alt="img" /></div>
       ))}
     </div>
   )

@@ -18,6 +18,10 @@
     grid-row: 2/span 6 ;
     grid-column: 1/span 3;
     background: rgb(61, 59, 192);
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  1fr;
     
 
 }
@@ -34,28 +38,37 @@
 
 .app_productCardHome{
   display: grid;
-  grid-template-rows: 80px,1fr;
+  grid-template-rows: 10px,1fr;
   grid-template-columns: 1fr;
   justify-content: center;
   align-content: center;
- background-color: beige;
+
 
 
   .app_productCardTitle{
     display: flex;
     justify-content: center;
-  
+
+    height: 50px;
   }
 
   .app_productCardImg{
-    background-color: rgb(160, 160, 37);
-    display: flex;
-    grid-template-rows: repeat(auto-fill,1fr);
-    grid-template-columns:  1fr,1fr,1fr,1fr;
+
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-columns:  1fr 1fr 1fr;
     grid-gap: 10px;
+    align-content: space-between;
+    justify-content: center;
+    justify-items: center;
        
-        img{
+    div{
           width: 100px;
+          background-color: rgb(160, 37, 105);
+
+          img{
+            width: 100px;
+          }
         }
       
   }
