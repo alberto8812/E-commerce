@@ -9,16 +9,17 @@ export interface Props{
  // productsHome:Product;
  product:Product
  children?: ReactElement | ReactElement[];
+ className:string;
 }
 
 
 
-export const ProductCardHome = ({children,product}:Props) => {
+export const ProductCardHome = ({children,product,className}:Props) => {
   return (
     <Provider value={{
       product,
     }}>
-      <div>
+      <div className={className}>
       {children}
       </div>
      
