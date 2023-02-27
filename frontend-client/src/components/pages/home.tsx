@@ -2,9 +2,10 @@ import React, { useEffect } from 'react'
 import { UseAction } from '../../hooks/useAction';
 import { useTypeSelector } from '../../hooks/useTypeSelector';
 import Chat from '../component/chatBot/Chat';
-import './styles/Home.scss'
-import { ProductCardHome, ProductCardImg } from '../component/ProductCardHome';
+import '../../styles/Home-style.scss'
+import { ProductCardHome, ProductCardImg,ProductCardTitle } from '../component/ProductCardHome';
 import { productsHome } from "../data/Producto";
+
 
 
 const Home = () => {
@@ -29,8 +30,12 @@ const Home = () => {
           <ProductCardHome
             key={product.title}
             product={product}
+            className={'app_productCardHome'}
+           
              >
-            <ProductCardImg/>
+
+            <ProductCardTitle className='app_productCardTitle' />
+            <ProductCardImg className='app_productCardImg'/>
             
           </ProductCardHome>
         ))}

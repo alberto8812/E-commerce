@@ -6,11 +6,40 @@ const Audio={
                 img:[
                     'https://cdn.alkst.co/td92da290/img/474xt_hvcdgx_6e565404.jpg',
                     'https://cdn.alkst.co/td92da290/img/474xt_vh7bdy_f26220ed.jpg',
+                    
                     'https://cdn.alkst.co/td92da290/img/474xt_9r3ey4_b664f20a.jpg'
-                   ]
+                ]
+            }
+
+ const Computadores={
+                title:'Computadores',
+                img:[
+                    'https://cdn.alkst.co/td92da290/img/474xt_hvcdgx_6e565404.jpg',
+                    'https://cdn.alkst.co/td92da290/img/474xt_vh7bdy_f26220ed.jpg',
+                    
+                    'https://cdn.alkst.co/td92da290/img/474xt_9r3ey4_b664f20a.jpg'
+                ]
+            }
+
+const Televisores={
+                title:'Televisores',
+                img:[
+                    'https://cdn.alkst.co/td92da290/img/474xt_hvcdgx_6e565404.jpg',
+                    'https://cdn.alkst.co/td92da290/img/474xt_vh7bdy_f26220ed.jpg',
+                    
+                    'https://cdn.alkst.co/td92da290/img/474xt_9r3ey4_b664f20a.jpg'
+                ]
+            }
+
+const Electrodomésticos={
+                title:'Electrodomésticos',
+                img:[
+                    'https://cdn.alkst.co/td92da290/img/474xt_hvcdgx_6e565404.jpg',
+                    'https://cdn.alkst.co/td92da290/img/474xt_vh7bdy_f26220ed.jpg',
+                    
+                    'https://cdn.alkst.co/td92da290/img/474xt_9r3ey4_b664f20a.jpg'
+                ]
             }
 
 
-
-
-export const productsHome:Product[]= [Audio]
+export const productsHome:Product[]= [Audio,Computadores,Televisores,Electrodomésticos]
