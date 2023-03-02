@@ -19,13 +19,13 @@ const Home = () => {
   return (
     <div className='app__navbar'>
       <header className='app__navbar-header'>
-        <div>
-          <h1>WORLD SHOP</h1>
-        </div>
+ 
+        
       </header>
 
       <body className='app__navbar-body'>
 
+      
        {productsHome.map(product=>(
           <ProductCardHome
             key={product.title}
@@ -38,7 +38,7 @@ const Home = () => {
             <ProductCardImg className='app_productCardImg'/>
             
           </ProductCardHome>
-        ))}
+       ))}
 
         <Chat/>
 
