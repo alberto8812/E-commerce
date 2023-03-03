@@ -1,7 +1,7 @@
 
 
 .app__navbar{
- background: rgb(95, 219, 219);
+
   height: auto;
   display: grid;
   grid-template-rows:  1fr  1fr 1fr 1fr 1fr 80px;
@@ -11,7 +11,7 @@
 .app__navbar-header{
 
   grid-column: 1/ span 3;
-
+  background: rgb(95, 219, 219);
   border: 0.5px;
   border-bottom-style: solid;
   border-radius: 15px;
@@ -21,13 +21,13 @@
 .app__navbar-body{
     grid-row: 2/span 6 ;
     grid-column: 1/span 3;
-    background: rgb(61, 59, 192);
     justify-content: center;
     display: grid;
     grid-template-columns:  1fr;
     grid-template-rows:  1fr;
-    grid-gap: 10px;
-
+    gap: 10px;
+    padding-bottom: 10%;
+   
 }
 
 .app__navbar-footer{
@@ -49,15 +49,24 @@
   grid-template-rows:repeat(auto-fill,1fr);
   justify-content: center;
   align-content: center;
-  padding: 100px;
- // background: rgb(214, 200, 77);
+  padding: 0 10%;
+
+
 
 
   .app_productCardTitle{
     display: flex;
-    //justify-content: center;
-    background: rgb(69, 59, 221);
     height: 50px;
+    justify-content: center;
+    padding: 20px;
+    border: 0.5px;
+    border-bottom-style: solid;
+
+     h2{
+      
+      height: 50px;
+
+     }
   }
 
   .app_productCardImg{
@@ -66,16 +75,18 @@
     grid-template-rows: repeat(auto-fill, 1fr);
     grid-template-columns:  1fr 1fr 1fr;
     align-content: space-between;
-
-   // justify-content: center;
-    //justify-items: center;
+    padding: 10px;
+    gap: 20px;
+   
+    justify-items: center;
        
     div{
-          width: 100px;
+          width: 100%;
          // background-color: rgb(160, 37, 105);
 
           img{
-            width: 100px;
+        //    width: 100px;
+         width: 100%;
           }
         }
       
