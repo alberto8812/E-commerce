@@ -1,18 +1,15 @@
-export {ProductHeaderSlidesShow} from './ProductHeaderSlidesShow';
-
-
 
 import {ProductHeaderCategory }from './ProductHeaderCategory';
 import {ProductHeaderSlidesShow} from './ProductHeaderSlidesShow';
 import {ProductHeaderHome as ProductHeaderHOC}  from './ProductHeaderHome';
-import { ProductCardHeaserHOCProps } from '../../../interfaces/interfaces';
+import { ProductCardHeaderHOCProps } from '../../../interfaces/interfaces';
 
 export {ProductHeaderCategory }from './ProductHeaderCategory';
+export {ProductHeaderSlidesShow} from './ProductHeaderSlidesShow';
 
-
-export const ProductHeaderHome:ProductHeaderSlidesShow=Object.assign(ProductHeaderHOC,{
-    SlideShow:ProductHeaderSlidesShow,
-    Categories:ProductHeaderCategory
+export const ProductHeaderHome:ProductCardHeaderHOCProps=Object.assign(ProductHeaderHOC,{
+    img:ProductHeaderSlidesShow,
+    product:ProductHeaderCategory
 })
 
 export default ProductHeaderHome

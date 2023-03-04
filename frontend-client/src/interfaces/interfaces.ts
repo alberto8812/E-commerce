@@ -1,5 +1,8 @@
 import { Props as ProductCardProps } from "../components/component/ProductCardHome/ProductCardHome";
 import { Props as ProductImageProps } from "../components/component/ProductCardHome/ProductCardImg";
+import { Props as ProductCategoryProps } from "../components/component/ProductHeader/ProductHeaderCategory";
+import { Props as ProductSlideProps } from "../components/component/ProductHeader/ProductHeaderSlidesShow";
+import { Props as ProductHeadersProps } from "../components/component/ProductHeader/ProductHeaderHome";
 
 
 
@@ -31,11 +34,12 @@ export interface headerSliceShow{
 }
 export interface ProductHeaderProps{
   product:Product;
+
   img:headerSliceShow;
 }
 
-  export interface ProductCardHeaserHOCProps{
-    ({product,img}:ProductHeaderProps):JSX.Element,
-    SlideShow:( Props: ProductImageProps ) => JSX.Element,
-    Categories:( Props: ProductImageProps ) => JSX.Element,
+  export interface ProductCardHeaderHOCProps{
+    ({children,product,img}:ProductHeadersProps):JSX.Element,
+    product:( Props: ProductCategoryProps ) => JSX.Element,
+    img:( Props: ProductSlideProps ) => JSX.Element,
   }
