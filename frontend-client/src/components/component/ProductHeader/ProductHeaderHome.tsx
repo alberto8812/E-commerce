@@ -1,22 +1,31 @@
 import React from 'react'
-import { ReactElement } from 'react';
-import { ProductHeaderProps,headerSliceShow } from '../../../interfaces/interfaces';
+import { ReactElement, createContext } from 'react';
+import { ProductHeaderProps,headerSliceShow,Product,} from '../../../interfaces/interfaces';
 
+
+export const PeoductContext=createContext({} as ProductHeaderProps )
+const {Provider}=PeoductContext;
 
 
 export interface Props{
   children?:ReactElement | ReactElement[];
-  product?:ProductHeaderProps;
-  img?:headerSliceShow,
+  product:Product;
+  img:headerSliceShow,
   ClassName?:string;
 }
 
 
 
 
-export const ProductHeaderHome = ({}:Props) => {
+export const ProductHeaderHome = ({children,product,img,ClassName}:Props) => {
   return (
-    <div>ProductHeaderHome</div>
+   <Provider value={{product,img}}>
+      
+      <div className={ClassName}>
+        {children}
+      </div>
+      
+   </Provider>
   )
 }
 

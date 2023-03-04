@@ -34,7 +34,6 @@ export interface headerSliceShow{
 }
 export interface ProductHeaderProps{
   product:Product;
-
   img:headerSliceShow;
 }
 
