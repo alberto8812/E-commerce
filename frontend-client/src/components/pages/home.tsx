@@ -5,6 +5,7 @@ import Chat from '../component/chatBot/Chat';
 import '../../styles/Home-style.scss'
 import { ProductCardHome, ProductCardImg,ProductCardTitle } from '../component/ProductCardHome';
 import { productsHome } from "../data/Producto";
+import ProductHeaderHome, { ProductHeaderCategory, ProductHeaderSlidesShow } from '../component/ProductHeader/index';
 
 
 
@@ -19,7 +20,12 @@ const Home = () => {
   return (
     <div className='app__navbar'>
       <header className='app__navbar-header'>
- 
+        <ProductHeaderHome>
+
+          <ProductHeaderCategory/>
+          <ProductHeaderSlidesShow/>
+          
+        </ProductHeaderHome>
         
       </header>
 
