@@ -17,10 +17,26 @@ const Home = () => {
         getAllProducts()
     }, [])
 
+
+    const product={
+      img:["",""],
+      title:""
+    }
+    const img={
+      img:["",""],
+      
+    }
+
+
+
   return (
     <div className='app__navbar'>
       <header className='app__navbar-header'>
-        <ProductHeaderHome>
+        <ProductHeaderHome
+          product={product}
+          img={img}
+          ClassName="ProductHeaderHome"
+        >
 
           <ProductHeaderCategory/>
           <ProductHeaderSlidesShow/>

@@ -15,7 +15,10 @@
   border: 0.5px;
   border-bottom-style: solid;
   border-radius: 15px;
- 
+   display: grid;
+   grid-template-columns:  1fr;
+   grid-template-rows:  1fr 1fr;
+   gap: 10px;
   }
 
 .app__navbar-body{
@@ -40,8 +43,16 @@
 }
 
 }
+//====================== Product Header Home ===================================
+.ProductHeaderHome {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
 
-// product card home
+  justify-items: center;
+
+}
+//===================== product card home =====================================
 
 .app_productCardHome{
   display: grid;
