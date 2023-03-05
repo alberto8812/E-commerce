@@ -71,4 +71,4 @@ const accesorios={
 }
 
 export const productsHome:Product[]= [Audio,Computadores,Televisores,Electrodomésticos]
-export const ProductsHeader:Product[]=[celulares,deportes,videojuegos,camaras,accesorios]
+export const ProductsHeader:Product[]=[celulares,deportes,videojuegos,camaras,accesorios,celulares,deportes,videojuegos,camaras,celulares,deportes,videojuegos,camaras,accesorios,celulares,deportes,videojuegos,camaras]
