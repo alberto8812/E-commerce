@@ -33,7 +33,7 @@ export interface headerSliceShow{
 
 }
 export interface ProductHeaderProps{
-  product:Product;
+  product:Product[];
   img:headerSliceShow;
 }
 
