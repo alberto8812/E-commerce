@@ -11,7 +11,7 @@
 .app__navbar-header{
 
   grid-column: 1/ span 3;
-  background: rgb(95, 219, 219);
+
   border: 0.5px;
   border-bottom-style: solid;
   border-radius: 15px;
@@ -50,6 +50,55 @@
   grid-template-rows: 1fr;
 
   justify-items: center;
+
+
+}
+
+.ProductHeaderCategory{
+ display: grid;
+ //grid-template-columns: 1fr 1fr 1fr;
+ grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+
+ width: 100%;
+ gap: 20px;
+ div{
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    div{
+      width:70%;
+      height: 30%;
+      min-height:80px;
+      min-width: 100px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 100%;
+      border: 0.5px;
+      border-style: solid;
+      border-color: rgb(223, 223, 223);
+      
+      img{
+        width: 70%;
+        height: 60%;
+      } 
+
+ 
+    }
+   h3{
+      text-align: center;
+    }
+
+    div:hover{
+      width:75%;
+      height: 33%;
+      min-height:83px;
+      min-width: 105px;
+      transition: width 0.5s, height 0.5s;
+      position: relative;
+    }
+ }
 
 }
 //===================== product card home =====================================

@@ -16,7 +16,7 @@ export interface Props{
 export const ProductCardImg = ({className}:Props) => {
    const {product} = useContext(ProductContext)
 
-    console.log(product,"aqui")
+ console.log(product,"header")
 
 
   return (

@@ -3,13 +3,13 @@ import { ReactElement, createContext } from 'react';
 import { ProductHeaderProps,headerSliceShow,Product,} from '../../../interfaces/interfaces';
 
 
-export const PeoductContext=createContext({} as ProductHeaderProps )
-const {Provider}=PeoductContext;
+export const ProductContextHeader=createContext({} as ProductHeaderProps )
+const {Provider}=ProductContextHeader;
 
 
 export interface Props{
   children?:ReactElement | ReactElement[];
-  product:Product;
+  product:Product[];
   img:headerSliceShow,
   ClassName?:string;
 }
