@@ -13,7 +13,7 @@ export interface Props{
 
 export const ProductHeaderCategory = ({className}:Props) => {
   const {product}=useContext(ProductContextHeader)
-  console.log(product)
+
   return (
     <div className={className}>
       {product.map(product=>(

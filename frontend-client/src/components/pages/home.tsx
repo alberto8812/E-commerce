@@ -4,7 +4,7 @@ import { useTypeSelector } from '../../hooks/useTypeSelector';
 import Chat from '../component/chatBot/Chat';
 import '../../styles/Home-style.scss'
 import { ProductCardHome, ProductCardImg,ProductCardTitle } from '../component/ProductCardHome';
-import { productsHome,ProductsHeader } from "../data/Producto";
+import { productsHome,ProductsHeader,img } from "../data/Producto";
 import ProductHeaderHome, { ProductHeaderCategory, ProductHeaderSlidesShow } from '../component/ProductHeader/index';
 
 
@@ -19,10 +19,6 @@ const Home = () => {
 
 
 
-    const img={
-      img:["",""],
-      
-    }
 
 
 
@@ -36,7 +32,7 @@ const Home = () => {
         >
 
           <ProductHeaderCategory className='ProductHeaderCategory'/>
-          <ProductHeaderSlidesShow/>
+          <ProductHeaderSlidesShow className='ProductHeaderSlidesShow'/>
           
         </ProductHeaderHome>
         

@@ -70,5 +70,11 @@ const accesorios={
     img:["https://www.ktronix.com/medias/accesorios.png?context=bWFzdGVyfGRpYS1zaW4taXZhfDMyODh8aW1hZ2UvcG5nfGRpYS1zaW4taXZhL2gzNy9oNWMvMTE2NzE4MzY5NTA1NTgucG5nfDJlNTIxZjdmZWI1NzY1ODRhNmY5ZmM3YjE3Y2UwMTc3YjNjZjBhMWUwMDQ5NzdjMGI4YzExMjJiMjdiYjVmYWE"]
 }
 
+
+const tecnologi="https://cdn.alkst.co/td92da290/img/474xt_fvmy3k_d4f7c316.jpg";
+const console="https://cdn.alkst.co/td92da290/img/474xt_raxth3_6af496d0.jpg";
+const ps2="https://cdn.alkst.co/td92da290/img/474xt_fv7mk6_93bc6af7.jpg";
+
 export const productsHome:Product[]= [Audio,Computadores,Televisores,Electrodomésticos]
 export const ProductsHeader:Product[]=[celulares,deportes,videojuegos,camaras,accesorios,celulares,deportes,videojuegos,camaras,celulares,deportes,videojuegos,camaras,accesorios,celulares,deportes,videojuegos,camaras]
+export const img={img:[tecnologi,console,ps2]}
