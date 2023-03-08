@@ -6,6 +6,7 @@ import '../../styles/Home-style.scss'
 import { ProductCardHome, ProductCardImg,ProductCardTitle } from '../component/ProductCardHome';
 import { productsHome,ProductsHeader,img } from "../data/Producto";
 import ProductHeaderHome, { ProductHeaderCategory, ProductHeaderSlidesShow } from '../component/ProductHeader/index';
+import { ProductFooterHome } from '../component/footer/ProductFooterHome';
 
 
 
@@ -58,7 +59,11 @@ const Home = () => {
         <Chat/>
 
       </body>
-      <footer className='app__navbar-footer'>footer</footer>
+      <footer className='app__navbar-footer'>
+        <ProductFooterHome/>
+
+
+      </footer>
     </div>
   )
 }
