@@ -2,7 +2,7 @@
 import {ProductHeaderCategory }from './ProductHeaderCategory';
 import {ProductHeaderSlidesShow} from './ProductHeaderSlidesShow';
 import {ProductHeaderHome as ProductHeaderHOC}  from './ProductHeaderHome';
-import { ProductCardHeaderHOCProps } from '../../../interfaces/interfaces';
+import { ProductCardHeaderHOCProps } from '../../../../../interfaces/interfaces';
 
 export {ProductHeaderCategory }from './ProductHeaderCategory';
 export {ProductHeaderSlidesShow} from './ProductHeaderSlidesShow';

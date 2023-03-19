@@ -1,12 +1,12 @@
 import React from 'react'
 import './Navbar.scss'
-import logo from "../../../images/logo.png";
+import logo from "../../../../images/logo.png";
 import { BsSearch,BsCart } from 'react-icons/bs'
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import Selector from '../selector/Selector';
 import { NavLink } from 'react-router-dom';
-import { routes } from '../../routes/routes';
+import { routes } from '../../../routes/routes';
 
 
 

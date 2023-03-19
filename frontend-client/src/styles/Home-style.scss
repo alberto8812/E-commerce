@@ -24,12 +24,16 @@
     grid-row: 2/span 6 ;
     grid-column: 1/span 3;
     justify-content: center;
+    background-color: aqua;
     display: grid;
     grid-template-columns:  1fr;
-    grid-template-rows:  1fr;
+    grid-template-rows:  1fr  ;
     gap: 10px;
     padding-bottom: 10%;
-   
+    
+    div{
+      background-color: beige;
+    }
 }
 
 .app__navbar-footer{

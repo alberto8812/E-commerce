@@ -1,6 +1,6 @@
 import React from 'react'
 import { ReactElement, createContext } from 'react';
-import { ProductHeaderProps,headerSliceShow,Product,} from '../../../interfaces/interfaces';
+import { ProductHeaderProps,headerSliceShow,Product,} from '../../../../../interfaces/interfaces';
 
 
 export const ProductContextHeader=createContext({} as ProductHeaderProps )

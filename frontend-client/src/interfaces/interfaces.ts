@@ -1,8 +1,8 @@
-import { Props as ProductCardProps } from "../components/component/ProductCardHome/ProductCardHome";
-import { Props as ProductImageProps } from "../components/component/ProductCardHome/ProductCardImg";
-import { Props as ProductCategoryProps } from "../components/component/ProductHeader/ProductHeaderCategory";
-import { Props as ProductSlideProps } from "../components/component/ProductHeader/ProductHeaderSlidesShow";
-import { Props as ProductHeadersProps } from "../components/component/ProductHeader/ProductHeaderHome";
+import { Props as ProductCardProps } from "../components/component/home/body/ProductCardHome/ProductCardHome";
+import { Props as ProductImageProps } from "../components/component/home/body/ProductCardHome/ProductCardImg";
+import { Props as ProductCategoryProps } from "../components/component/home/header/ProductHeader/ProductHeaderCategory";
+import { Props as ProductSlideProps } from "../components/component/home/header/ProductHeader/ProductHeaderSlidesShow";
+import { Props as ProductHeadersProps } from "../components/component/home/header/ProductHeader/ProductHeaderHome";
 
 
 
