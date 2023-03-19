@@ -1,4 +1,4 @@
-import { Product } from '../../interfaces/interfaces';
+import { Product, ProductBodySlider } from '../../interfaces/interfaces';
 
 
 const Audio={
@@ -75,6 +75,25 @@ const tecnologi="https://cdn.alkst.co/td92da290/img/474xt_fvmy3k_d4f7c316.jpg";
 const console="https://cdn.alkst.co/td92da290/img/474xt_raxth3_6af496d0.jpg";
 const ps2="https://cdn.alkst.co/td92da290/img/474xt_fv7mk6_93bc6af7.jpg";
 
+
+const accesoriosslide={
+    Title:'Camara Sony',
+    Img:"https://www.ktronix.com/medias/accesorios.png?context=bWFzdGVyfGRpYS1zaW4taXZhfDMyODh8aW1hZ2UvcG5nfGRpYS1zaW4taXZhL2gzNy9oNWMvMTE2NzE4MzY5NTA1NTgucG5nfDJlNTIxZjdmZWI1NzY1ODRhNmY5ZmM3YjE3Y2UwMTc3YjNjZjBhMWUwMDQ5NzdjMGI4YzExMjJiMjdiYjVmYWE",
+    Score:4.5,
+    Price:100000
+}
+const videojuegosSlide={
+    Title:'Videojuegos',
+    Img:"https://www.ktronix.com/medias/videojuegos.jpg?context=bWFzdGVyfHJvb3R8MjQxMHxpbWFnZS9qcGVnfGg2YS9oYzcvMTIzNTk1MzUxNjU0NzAuanBnfDhmNWVlOTcxZWJiMWJhMGVmM2VjNjUzZWNkNzU3NWQ5MDEzN2ZhMDU0YzE1MTc3ODJlODE0MzIzN2ViZTNiZGY",
+    Score:4.5,
+    Price:100000
+}
+
+
+
+
 export const productsHome:Product[]= [Audio,Computadores,Televisores,Electrodomésticos]
 export const ProductsHeader:Product[]=[celulares,deportes,videojuegos,camaras,accesorios,celulares,deportes,videojuegos,camaras,celulares,deportes,videojuegos,camaras,accesorios,celulares,deportes,videojuegos,camaras]
 export const img={img:[tecnologi,console,ps2]}
+
+export const slidebodyProduct:ProductBodySlider[]=[accesoriosslide,videojuegosSlide]
