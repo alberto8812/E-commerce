@@ -26,6 +26,25 @@ export  interface Product {
    
   }
 
+  //----------------------------SliderProductCard---------------------------------------------------
+  export interface ProductBodySlider {
+    img:string,
+    title:string;
+    puntuation:number;
+    Price:number;
+  }
+
+  export interface ProductContextBodySliderProps{
+    product:ProductBodySlider
+    
+  }
+
+
+  export interface slideProductHOCProps{
+
+  }
+
+  //================================================================================================================================
   //////////////////////////////HEADER/////////////////////////////
 
 export interface headerSliceShow{

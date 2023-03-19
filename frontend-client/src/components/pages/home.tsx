@@ -58,9 +58,9 @@ const Home = () => {
              ))}
     
     
-        <div>
-          parte 2
-        </div>
+    <Carousel>
+      
+    </Carousel>
         <Chat/>
 
       </body>
