@@ -5,6 +5,12 @@ import { Props as ProductSlideProps } from "../components/component/home/header/
 import { Props as ProductHeadersProps } from "../components/component/home/header/ProductHeader/ProductHeaderHome";
 
 
+//props slideproduct body
+import { props as slideProductBodyProps } from "../components/component/home/body/SlideProductCard/SlideProductBody";
+import { Props as SlideProductImgProps } from "../components/component/home/body/SlideProductCard/SlideProductImg";
+import { Props as SlideProductPriceProps } from "../components/component/home/body/SlideProductCard/SlideProductPrice";
+import { Props as SlideProductTitleProps } from "../components/component/home/body/SlideProductCard/SlideProductTitle";
+import { Props as SlideProductScoreProps } from "../components/component/home/body/SlideProductCard/SlideProductPuntuation";
 
 
 
@@ -28,20 +34,24 @@ export  interface Product {
 
   //----------------------------SliderProductCard---------------------------------------------------
   export interface ProductBodySlider {
-    img:string,
-    title:string;
-    puntuation:number;
+    Img:string;
+    Title:string;
+    Score:number;
     Price:number;
   }
 
   export interface ProductContextBodySliderProps{
     product:ProductBodySlider
-    
+
   }
 
 
   export interface slideProductHOCProps{
-
+    ({children,product}:slideProductBodyProps):JSX.Element,
+    Img:( Props:SlideProductImgProps)=>JSX.Element;
+    Title:( Props:SlideProductTitleProps)=>JSX.Element;
+    Score:( Props:SlideProductScoreProps)=>JSX.Element;
+    Price:( Props:SlideProductPriceProps)=>JSX.Element;
   }
 
   //================================================================================================================================

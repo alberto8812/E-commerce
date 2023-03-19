@@ -1,6 +1,15 @@
-import React from 'react'
+import { useContext } from 'react';
+import { ProductContextsliderBody } from './SlideProductBody';
 
-export const SlideProductPuntuation = () => {
+export interface Props{
+  score?:number
+  className?: string;
+}
+
+
+
+export const SlideProductPuntuation = ({className}:Props) => {
+  const {product}=useContext(ProductContextsliderBody)
   return (
     <div>SlideProductPuntuation</div>
   )
