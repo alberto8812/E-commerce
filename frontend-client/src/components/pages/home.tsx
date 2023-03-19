@@ -3,11 +3,11 @@ import { UseAction } from '../../hooks/useAction';
 import { useTypeSelector } from '../../hooks/useTypeSelector';
 import Chat from '../component/chatBot/Chat';
 import '../../styles/Home-style.scss'
-import { ProductCardHome, ProductCardImg,ProductCardTitle } from '../component/ProductCardHome';
+import { ProductCardHome, ProductCardImg,ProductCardTitle } from '../component/home/body/ProductCardHome';
 import { productsHome,ProductsHeader,img } from "../data/Producto";
-import ProductHeaderHome, { ProductHeaderCategory, ProductHeaderSlidesShow } from '../component/ProductHeader/index';
-import { ProductFooterHome } from '../component/footer/ProductFooterHome';
-
+import ProductHeaderHome, { ProductHeaderCategory, ProductHeaderSlidesShow } from '../component/home/header/ProductHeader/index';
+import { ProductFooterHome } from '../component/home/footer/ProductFooterHome';
+import Carousel from "react-material-ui-carousel";
 
 
 const Home = () => {
@@ -41,21 +41,26 @@ const Home = () => {
 
       <body className='app__navbar-body'>
 
-      
-       {productsHome.map(product=>(
-          <ProductCardHome
-            key={product.title}
-            product={product}
-            className={'app_productCardHome'}
-           
-             >
-
-            <ProductCardTitle className='app_productCardTitle' />
-            <ProductCardImg className='app_productCardImg'/>
+      {/**
+       * mean producto presentation
+       * only include rute,title and image
+       */}
+           {productsHome.map(product=>(
+             <ProductCardHome
+               key={product.title}
+                 product={product}
+                 className={'app_productCardHome'}
+                >
+              <ProductCardTitle className='app_productCardTitle' />
+              <ProductCardImg className='app_productCardImg'/>
             
-          </ProductCardHome>
-       ))}
-
+              </ProductCardHome>
+             ))}
+    
+    
+        <div>
+          parte 2
+        </div>
         <Chat/>
 
       </body>

@@ -1,4 +1,4 @@
-import { ProductCardHOCProps } from '../../../interfaces/interfaces';
+import { ProductCardHOCProps } from '../../../../../interfaces/interfaces';
 
 
 import { ProductCardImg } from './ProductCardImg';
