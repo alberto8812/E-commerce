@@ -10,7 +10,9 @@ export const SlideProductPrice = ({className}:Props) => {
   const {product}=useContext(ProductContextsliderBody)
   const {Price}=product
   return (
-    <div><h4>${Price}</h4></div>
+    <div className={className}>
+      <h4>${Price}</h4>
+    </div>
   )
 }
 

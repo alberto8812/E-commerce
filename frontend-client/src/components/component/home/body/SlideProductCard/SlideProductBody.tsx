@@ -10,7 +10,7 @@ const {Provider}                      = ProductContextsliderBody;
 export interface props{
     product:ProductBodySlider;
     children?:ReactElement | ReactElement[],
-    className:string
+    className:string[]
 }
 
 
@@ -19,8 +19,10 @@ export const SlideProductBody = ({children,product,className}:props) => {
     <Provider value={{
         product,
       }}>
-        <div className={className}>
-            {children}
+        <div className={className[0]}>
+            <div className={className[1]}>
+             {children}
+            </div>
         </div>
     </Provider>
   )

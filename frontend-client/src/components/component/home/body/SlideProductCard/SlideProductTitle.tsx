@@ -11,7 +11,9 @@ export const SlideProductTitle = ({className}:Props) => {
   const {product}=useContext(ProductContextsliderBody);
   const {Title}=product
   return (
-    <div><h4>{Title}</h4></div>
+    <div className={className}>
+      <h4>{Title}</h4>
+    </div>
   )
 }
 

@@ -16,7 +16,8 @@ const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
     items: 3,
-    slidesToSlide: 3 // optional, default to 1.
+    slidesToSlide: 3, // optional, default to 1.
+  
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
@@ -82,13 +83,16 @@ const Home = () => {
 
     {slidebodyProduct.map(product=>(
       <SlideProductBody        
-      className={'app_productCardHome'}
+      className={['app_slideProductCardBody','app_slideProductCardBodyInfo']}
       product={product}
+      key={product.Title}
       >
-       <SlideProductImg/>
-       <SlideProductPrice/>
-       <SlideProductPuntuation/>
-       <SlideProductTitle/>
+       <SlideProductImg  className={'app_slideProductCardBodyImg'}/>
+   
+          <SlideProductPuntuation className={'app_slideProductCardBodyScore'}/>
+          <SlideProductTitle className={'app_slideProductCardBodyTitle'}/>
+          <SlideProductPrice className={'app_slideProductCardBodyPrice'}/>
+
       </SlideProductBody>
       ))}
     </Carousel>
