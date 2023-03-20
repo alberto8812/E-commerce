@@ -10,8 +10,9 @@ export interface Props{
 
 export const SlideProductPuntuation = ({className}:Props) => {
   const {product}=useContext(ProductContextsliderBody)
+  const {Score}=product
   return (
-    <div>SlideProductPuntuation</div>
+    <div><h4>{Score}</h4></div>
   )
 }
 
