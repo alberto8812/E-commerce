@@ -12,10 +12,9 @@ export const SlideProductPuntuation = ({className}:Props) => {
   const {product}=useContext(ProductContextsliderBody)
   const {Score}=product
   return (
-    <div>
+    <div className={className}>
       <Rating name="read-only" value={Score} readOnly />
-      <h4>{Score}</h4>
-      </div>
+    </div>
   )
 }
 

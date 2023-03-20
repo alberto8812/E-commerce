@@ -13,7 +13,9 @@ export const SlideProductImg = ({className}:Props) => {
  const {product}=useContext(ProductContextsliderBody)
  const {Img}=product
   return (
-    <div><img src={Img} alt="SliderBodyImg" /></div>
+    <div className={className}>
+      <img src={Img} alt="SliderBodyImg" />
+    </div>
   )
 }
 
