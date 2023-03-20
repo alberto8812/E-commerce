@@ -8,9 +8,10 @@ export interface Props{
 }
 
 export const SlideProductTitle = ({className}:Props) => {
-  const {product}=useContext(ProductContextsliderBody)
+  const {product}=useContext(ProductContextsliderBody);
+  const {Title}=product
   return (
-    <div>SlideProductTitle</div>
+    <div><h4>{Title}</h4></div>
   )
 }
 

@@ -11,9 +11,9 @@ export interface Props{
 
 export const SlideProductImg = ({className}:Props) => {
  const {product}=useContext(ProductContextsliderBody)
-
+ const {Img}=product
   return (
-    <div>SlideProductImg</div>
+    <div><img src={Img} alt="SliderBodyImg" /></div>
   )
 }
 

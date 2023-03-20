@@ -7,6 +7,7 @@ import { ProductCardHome, ProductCardImg,ProductCardTitle } from '../component/h
 import { productsHome,ProductsHeader,img,slidebodyProduct } from "../data/Producto";
 import ProductHeaderHome,{ ProductHeaderCategory, ProductHeaderSlidesShow } from '../component/home/header/ProductHeader/index';
 import { ProductFooterHome } from '../component/home/footer/ProductFooterHome';
+
 import {SlideProductBody, SlideProductImg, SlideProductPrice, SlideProductPuntuation,SlideProductTitle} from '../component/home/body/SlideProductCard/index';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -77,7 +78,7 @@ const Home = () => {
              ))}
     
     
-    <Carousel responsive={responsive}>
+    <Carousel  responsive={responsive}>
 
     {slidebodyProduct.map(product=>(
       <SlideProductBody        

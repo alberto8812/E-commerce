@@ -8,8 +8,9 @@ export interface Props{
 
 export const SlideProductPrice = ({className}:Props) => {
   const {product}=useContext(ProductContextsliderBody)
+  const {Price}=product
   return (
-    <div>SlideProductPrice</div>
+    <div><h4>${Price}</h4></div>
   )
 }
 
