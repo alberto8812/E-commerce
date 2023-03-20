@@ -82,7 +82,7 @@ const Home = () => {
 
     {slidebodyProduct.map(product=>(
       <SlideProductBody        
-      className={'app_productCardHome'}
+      className={'app_slideProductCard'}
       product={product}
       >
        <SlideProductImg/>

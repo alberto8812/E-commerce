@@ -92,13 +92,13 @@ const videojuegosSlide={
 const camarasSlide={
     Title:'Camaras',
     Img:"https://www.ktronix.com/medias/MicrosoftTeams-image-5-.png?context=bWFzdGVyfGltZy1wYWdpbmFzLWVycm9yLTUwMHwyNjQ1fGltYWdlL3BuZ3xpbWctcGFnaW5hcy1lcnJvci01MDAvaGRlL2g1MS8xMjQxNDExOTQxMTc0Mi5wbmd8NzBmZDMwM2E5M2Q0NzU0ZDlhNTRhMzA1MGMzNDcyYjkyMzVhY2JhY2ZlNDNjNGVkNzFiODQxOGI0NTMxYWMzYw",
-    Score:4.5,
+    Score:4,
     Price:100000
 }
 const camarasSlideSlide={
     Title:'Deportes',
     Img:"https://www.ktronix.com/medias/deportes.png?context=bWFzdGVyfGRpYS1zaW4taXZhfDEwMzY2fGltYWdlL3BuZ3xkaWEtc2luLWl2YS9oZTEvaDFkLzExNjg1MTQ1MDE4Mzk4LnBuZ3xhOGUwNDliNTE0OWRmYmMxZWQzNDJmMWUyZWMyMmJkN2IyZmYwNzZhYWMxODM3MGQ1MDQyNmQwNjk0N2IwN2E2",
-    Score:4.5,
+    Score:3,
     Price:100000
 }
 
